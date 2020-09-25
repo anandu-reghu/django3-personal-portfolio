@@ -1,0 +1,17 @@
+{% extends 'PortfolioHome/base.html' %}
+{% block content %}
+
+<h1>Blogs</h1>
+<h3>kr14 has written {{ blogs.count }} blog{{ blogs.count|pluralize }}
+{% for blog in blogs %}
+<a href='{% url "blog:details" blog.id %}'><h2>{{ blog.title }}</h2></a>
+{{ blog.date|date:'M d Y'|upper }}
+<br>
+  {% if blog.image %}
+  <img src='{{ blog.image.url }}'>
+  {% endif %}
+  <br>
+{{ blog.description|truncatechars:250 }}
+
+{% endfor %}
+{% endblock %}

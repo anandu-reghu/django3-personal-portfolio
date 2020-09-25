@@ -1,0 +1,49 @@
+body {
+  background-color: lightblue;
+}
+.intro{
+  background-image: url("introbackground.jpg");
+  background-size:100% 100%;
+  color:white;
+  margin-bottom: 0px;
+  /* flex:1; */
+  /* flex-basis: 80%; */
+  /* flex-shrink: 2; */
+}
+#brand{
+  text-align: center;
+  font-size:70px;
+  font-weight:600;
+  text-shadow:1px 1px 20px black;
+}
+.quote{
+  text-align: center;
+  font-size:40px;
+  font-weight:200;
+  padding:30px 100px;
+  text-shadow:1px 1px 20px black;
+}
+.projects{
+  background-image: url("projectField.jpg");
+  background-size:100% 100%;
+  color:white;
+  margin:0px;
+}
+
+.project{
+  padding:30px;
+}
+.projecthead{
+  padding:30px;
+  flex:1;
+}
+hr.hr{
+  border: 1px solid white;
+}
+#projectTitle{
+  padding:10px 10px 10px 0px;
+  font-weight: 200;
+}
+#projectContents{
+  padding:30px;
+}
